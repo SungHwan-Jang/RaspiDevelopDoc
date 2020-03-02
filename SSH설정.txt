@@ -1,0 +1,42 @@
+1. pi에서 root 암호 변경시
+sudo passwd root 로 변경
+# vi /etc/ssh/sshd_config 로 루트 SSH 접속 활성화 (안해도됨 다만 루트계정 접속불가)
+
+#Authentication: LoginGraceTime 120 
+#PermitRootLogin without-password 
+PermitRootLogin yes 
+StrictModes yes
+
+퍼밋 루트로긴 yes 변경
+
+2. 공유기 포트 포워딩 설정
+공유기 아이피 (외부 접속용) - pi 아이피 (내부 할당 ip)를 사용
+외부 접속용 공유기 아이피와 12345와 같은 포트 번호 할당
+내부 아이피는 ssh 전용 22번 포트 할당.
+
+이를 포트포워딩 하면 외부 접속이 가능하다.
+
+3. putty로 ssh 접속을 한다.
+아이디 pi 비번은 root비번
+
+4. vsftpd 설치
+sudo apt-get install vsftpd
+
+sudo /etc/vsftpd.conf 설정변경
+
+local_enable=YES
+write_enable=YES
+local_umask=022
+
+부팅시 자동 재시작
+sudo systemctl enable vsftpd
+
+5. 한글꺠짐 글꼴설치
+sudo apt-get install fonts-unfonts-core
+
+6. REMOTE 연결관리
+sudo apt-get install tightvncserver
+sudo apt-get install xrdp
+윈도우 상에서 원격 컴퓨터 연결 하여 접속.
+
+

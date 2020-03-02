@@ -1,0 +1,11 @@
+https://blog.xcoda.net/88
+
+https://geeksvoyage.com/page8/
+
+vim 설정
+https://github.com/dydgns2017/RaspberryPi_vimplug
+
+vscode 설치
+cd ~
+wget https://github.com/stevedesmond-ca/vscode-arm/releases/download/1.28.2/vscode-1.28.2.deb
+sudo apt install ./vscode-1.28.2.deb

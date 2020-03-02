@@ -1,0 +1,7 @@
+https://piplus.tistory.com/36
+anaconda 설치
+
+https://hamonikr.org/board_bFBk25/19240 (linux)
+https://1d1cblog.tistory.com/27 (pi)
+https://note.espriter.net/1265 (pi)
+maria DB 서버 

@@ -1,0 +1,16 @@
+vim, base build 설치
+sudo apt-get install build-essential
+sudo apt-get install vim
+sudo apt-get install make
+
+https://withcoding.com/47
+-ftp설정
+
+https://aqwerf.tistory.com/13
+- host linux 기반으로 slave pi일때 crosscompiler 설치
+
+ARM 크로스 컴파일러 툴 체인설치.
+ sudo apt-get install gcc-arm-none-eabi
+
+https://www.raspberrypi.org/forums/viewtopic.php?t=99127
+raspberry gcc-arm 포럼
